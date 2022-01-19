@@ -32,9 +32,15 @@
                 </div>
 
                 <div class="budget-section">
-                    <input type='number' placeholder="Enter Budget"/>
-                    <input type="text" placeholder="Description"/>
-                    <input type="number" placeholder="Amount"/>
+                    <input type='number' id='budget-amount' placeholder="Enter Budget"/>
+                    <input type="text" id='budget-description'placeholder="Description"/>
+                    <input type="number" id='budget-expense'placeholder="Amount"/>
+                    <button type="button" id="budget-data-submit">Enter</button>
+                </div>
+
+                <div class="display-data">
+                    <div id="description"></div>
+                    <div id="expense"></div>
                 </div>
 
             </div>
