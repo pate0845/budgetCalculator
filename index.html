@@ -10,41 +10,32 @@
     <title>Budget Calculator</title>
 </head>
 <body>
-    <div id="container">
-        <div id='box'>
-            <div class="input-budget">
+    <div id='box'>
+        <div class="budget-display">
+            <i class="fa fa-bitcoin fa-3x"></i>
+            <p>Budget</p>
+            <span id="budget-display-amount"></span>
+        </div>
+        <div class="budget-display">
+            <i class="fa fa-credit-card-alt fa-3x" aria-hidden="true"></i>
+            <p>Expense</p>
+            <span id="budget-display-expense"></span>
+        </div>
+        <div class="budget-display">
+            <i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i>
+            <p>Saving</p>
+            <span id="budget-display-saving"></span>
+        </div>
 
-                <div class="budget-display">
-                    <i class="fa fa-bitcoin"></i>
-                    <p>Budget</p>
-                    <span id="budget-display-amount"></span>
-                </div>
-
-                <div class="budget-display">
-                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
-                    <p>Expense</p>
-                    <span id="budget-display-expense"></span>
-                </div>
-
-                <div class="budget-display">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                    <p>Saving</p>
-                    <span id="budget-display-saving"></span>
-                </div>
-
-                <div class="budget-section">
-                    <input type='number' id='budget-amount' placeholder="Enter Budget"/>
-                    <br>
-                    <input type="text" id='budget-description'placeholder="Description"/>
-                    <input type="number" id='budget-expense'placeholder="Amount"/>
-                    <button class="btn btn-outline-primary" type="button" onclick="btnClicked()" id="budget-data-submit">Enter</button>
-                </div>
-
-                <div id="display-data">
-                </div>
-
-                <span id="message" class="alert"></span>
-            </div>
+        <div class="input-budget">
+            <input type='number' id='budget-amount' placeholder="Enter Budget"/><br>
+            <input type="text" id='budget-description'placeholder="Description"/> 
+            <input type="number" id='budget-expense'placeholder="Amount"/>
+            <button class="btn btn-outline-primary" type="button" onclick="btnClicked()" id="budget-data-submit">Enter</button>
+        </div>     
+        
+        <div id="display-data" class="display-message">
+            <span id="message" class="alert"></span>
         </div>
     </div>
 </body>
